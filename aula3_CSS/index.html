@@ -2,22 +2,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel=" personal icon" href="img/foto-perfil.png">
     <title>Tech: Mulheres negras</title>
     <meta charset="utf-8"> 
     <meta name="description" content="Portfólio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <!-- inserindo nosso arquivo css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- CSS INTERNO -->
+    <!-- <style>
+        body {
+            background-color: blue;
+        }
+        h1 {
+            color: red;
+            padding: 60px;
+        } 
+    </style> -->
 </head>
 <body>
-    <h1>Meu primeiro site</h1>
-    <p>Meu primeiro parágrafo</p>
-    <!-- Representa um grupo de introdução ao navegador -->
-     <header>
+     <header class="header-menu">
         <!-- Representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página -->
         <nav>
-            <ul>
+            <ul class="lista-menu">
                <li>
-                    <a>Formação</a>
+                    <a href="#formacao">Formação</a>
                 </li>
                 <li>
                     <a>Portfólio</a>
@@ -31,17 +42,19 @@
     <!-- Tem uma única função semântica: definir o conteúdo principal da página ou da aplicação -->
     <main>
         <!-- É utilizada para marcar as seções de conteúdo de uma página -->
-        <section>
+        <section class="principal">
             <!-- representa uma tag independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável -->
-            <article>
+            <article class="subcontainer-principal container">
                 <div>
                     <img src="img/foto-perfil.png">
                 </div>
                 <div>
-                    <h1>Marina Silva</h1>
-                    <h2>Desenvolvedora Web</h2>
+                    <!-- css inline, padding define as bordas ao redor -->
+                    <!-- <h1 style="color:purple;padding:75px;">Marina Silva</h1> -->
+                    <h1 class="nome-completo">Marina Silva</h1>
+                    <h2 class="profissao">Desenvolvedora Web</h2>
                 </div>
-                <div>
+                <div class="texto-sobre">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. Nulla facilisi. Nulla id luctus tortor, id hendrerit
                     metus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, ut
                 </div>
@@ -49,26 +62,27 @@
         </section>
 
         <section>
-            <article>
+            <article id="formacao" class="container article-lista">
                 <div>
-                    <h3>Formação</h3>
+                    <h3 class="topico-principal">Formação</h3>
                 </div>
-                <div>
+                <div class="lista-item">
                     <ul>
                         <li>
-                            <p>Curso de Programação</p>
+                            <p class="lista-titulo">Curso de Programação</p>
                             <a href="https://minasprogramam.com/" target="_blank">Instituto Minas Programam</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                            <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
                         </li>
                         <li>
-                            <p>Ensino Médio</p>
+                            <p class="lista-titulo">Ensino Médio</p>
                             <a href="https://minasprogramam.com/" target="_blank">Colégio Ensino</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                            <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
                         </li>
                     </ul>
                 </div>
             </article>
         </section>
+
         <section>
             <article>
                 <div>

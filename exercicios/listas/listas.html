@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <!-- https://www.homehost.com.br/blog/criar-sites/tabela-html/ -->
 <html lang="pt-br">
     <head>
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h2>Exemplo de Lista Ordenada</h2>
+        <h1>Exemplo de Lista Ordenada</h1>
         <!-- <ol>representa uma lista de itens ordenados.</ol> -->
         <ol>
             <li>Encontrar um trabalho</li>
@@ -19,14 +19,37 @@
         </ol>
 
         <!-- Você pode começar a sua lista com qualquer número que você quises, apenas especifique isso com a ajuda do atributo start  -->
-
+        <h2>Exemplo de Lista Ordenada iniciando de onde eu quiser</h2>
         <ol start="4" >
             <li>Encontrar um trabalho</li>
             <li>Fazer muito dinheiro</li>
             <li>Mudar para outra cidade</li>
         </ol>
 
-        <h2>Exemplo de Lista Desordenada</h2>
+        <h2>Listas Aninhadas</h2>
+
+        <ol>
+            <li>primeiro item</li>
+            <li>segundo item      <!-- Veja que a tag de fechamento </li> não é colocada aqui! -->
+              <ol>
+                <li>segundo item primeiro subitem</li>
+                <li>segundo item segundo subitem</li>
+              </ol>
+            </li>                <!-- Aqui está a tag de fechamento </li> -->
+            <li>terceiro item</li>
+        </ol>
+        
+        <h2>Lista ordenada alfabéticamente</h2>
+
+        <ol type="a">
+            <li>Nome</li>
+            <li>Telefone</li>
+            <li>Endereço</li>
+            <li>País</li>
+        </ol> 
+
+        <h1>Exemplo de Lista Desordenada</h1>
+        
         
         <ul>
             <li>Leite</li>
@@ -35,6 +58,7 @@
             <li>Açúcar</li>
         </ul>
 
+        <h2>Lista ordenada Quadradinhos</h2>
         <ul type="square">
             <li>Chocolate</li>
             <li>Bolacha</li>
@@ -42,14 +66,13 @@
             <li>Arroz</li>
         </ul>
 
+        <h2>Lista ordenada circulo vazado</h2>
         <ul type="circle">
             <li>Farinha</li>
             <li>Milho</li>
             <li>Molho</li>
             <li>Macarrão</li>
         </ul>
-
-       
         
     </body>
 </html>

@@ -1,5 +1,6 @@
+/* primeiras propriedades: */
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     outline: 0;
     box-sizing: border-box;
@@ -119,16 +120,16 @@ li {
     font-weight: 300;
 }
 
-.wrapper-portfolio {
-    background-color: #EAEAEA;
-    display: flex;
-    flex-direction: column;
-}
-
 .article-lista {
     display: flex;
     margin-top: 100px;
     margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.wrapper-portfolio {
+    background-color: #EAEAEA;
+    display: flex;
     flex-direction: column;
 }
 
